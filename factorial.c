@@ -13,4 +13,12 @@ int main(void)
 int factorial(int number)
 {
     // Return the factorial of the number
+    if (number == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return number * factorial(number - 1);
+    }
 }
